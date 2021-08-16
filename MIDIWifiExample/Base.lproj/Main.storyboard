@@ -1,24 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <button opaque="NO" tag="60" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tuq-tg-vyo">
+                                <rect key="frame" x="90" y="193" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="C4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="xuC-Jg-7zg"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="1QI-lW-V7O"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="62" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcm-gm-0kd">
+                                <rect key="frame" x="90" y="237" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="D4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="rKW-3C-YdZ"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="sjg-P5-CQu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="64" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKx-Ye-kfB">
+                                <rect key="frame" x="90" y="281" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="E4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="lnr-UO-5Df"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="F0t-gO-B9H"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="65" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7aD-Fs-Jid">
+                                <rect key="frame" x="90" y="325" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="F4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="RM9-jQ-vrH"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="Ajs-pL-Wrj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="66" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0w-mN-UYQ">
+                                <rect key="frame" x="149" y="343" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="F4#"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="LLp-pa-SCO"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="ouD-AM-g3q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="67" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihz-bg-KSy">
+                                <rect key="frame" x="90" y="369" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="G4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="Rh8-yK-HSv"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="cIN-2Y-da3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="69" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbL-bx-ttO">
+                                <rect key="frame" x="90" y="413" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="A4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="BKg-rY-wqH"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="RgW-Q6-Nve"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="70" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pcn-GO-4Rl">
+                                <rect key="frame" x="149" y="431" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="A4#"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="BLG-Am-Jz6"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="NFv-Ri-nvn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="68" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsY-xZ-6RM">
+                                <rect key="frame" x="149" y="387" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="G4#"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="VO9-sR-82g"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="BbT-um-yTz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="63" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hak-Rg-l9N">
+                                <rect key="frame" x="149" y="258" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="D4#"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="Rui-MR-fPi"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="d71-7k-FUn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="61" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dyg-b4-czz">
+                                <rect key="frame" x="149" y="214" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="C4#"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="uyu-9q-y9J"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="HBs-gm-Bic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="71" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ji6-PW-pyZ">
+                                <rect key="frame" x="90" y="457" width="51" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <size key="titleShadowOffset" width="1" height="1"/>
+                                <state key="normal" title="B4"/>
+                                <connections>
+                                    <action selector="handleKeyDown:" destination="dkx-z0-nzr" eventType="touchDown" id="bzB-nW-h25"/>
+                                    <action selector="handleKeyUp:" destination="dkx-z0-nzr" eventType="touchUpInside" id="Sdc-eu-jns"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
 </document>
